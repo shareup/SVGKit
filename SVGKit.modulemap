@@ -1,7 +1,0 @@
-module SVGKit {
-    umbrella header "SVGKit.h"
-
-    exclude header "SVGKDefine_Private.h"
-    exclude header "SVGKImageRep.h"
-    exclude header "SVGKExporterNSImage.h"
-}
