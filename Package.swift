@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -27,6 +27,7 @@ let package = Package(
             exclude: [
                 "SwiftUI additions"
             ],
+            resources: [.process("Resources/PrivacyInfo.xcprivacy")],
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("privateHeaders")
