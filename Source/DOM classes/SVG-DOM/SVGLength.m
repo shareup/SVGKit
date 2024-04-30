@@ -428,7 +428,7 @@ static float cachedDevicePixelsPerInch;
         @"iPad14,2": @326,
 
         // iPad 10th Gen, 2022
-        @"iPad18,18": @264,
+        @"iPad13,18": @264,
         @"iPad13,19": @264,
 
         // iPad Pro 4th Gen 11-inch, 2022
