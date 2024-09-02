@@ -30,7 +30,8 @@ let package = Package(
             resources: [.process("Resources/PrivacyInfo.xcprivacy")],
             publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath("privateHeaders")
+                .headerSearchPath("privateHeaders"),
+                .define("NS_BLOCK_ASSERTIONS"),
             ]
         ),
         .target(
@@ -38,7 +39,8 @@ let package = Package(
             dependencies: [
                 "SVGKit"
             ],
-            path: "Source/SwiftUI additions"
+            path: "Source/SwiftUI additions",
+            cSettings: [.define("NS_BLOCK_ASSERTIONS")]
         )
     ]
 )
